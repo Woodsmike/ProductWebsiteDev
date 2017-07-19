@@ -24,7 +24,6 @@ li {
         text-decoration: none;
     }
 
-        /* Change the link color to #111 (black) on hover */
         li a:hover {
             background-color: #111;
         }
@@ -36,7 +35,9 @@ li {
 
 p {
     font-family: 'Roboto', sans-serif;
-    
+    font-size: 15px;
+    text-align: justify;
+    column-gap: 15px;
 }
 
 .button {
@@ -48,8 +49,9 @@ p {
     margin: auto;
     display: block;
     font-size: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);   
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
     .button:hover {
         color: red;
         background-color: transparent;
@@ -62,23 +64,21 @@ img {
     padding: 30px 0px 30px 0px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 55px;
-    font-family: 'Roboto', sans-serif;
-}
+
 .headerDiv {
     border: 3px solid #333;
-    border-radius: 10px;    
+    border-radius: 10px;
+    margin-top: 0px;
 }
-#p1Div1 {
+
+.p1Div1 {
     margin-bottom: 20px;
     padding: 0px;
     font-size: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-shadow: inherit;
-   
+    color: darkred;
 }
 
 a:link {
@@ -89,8 +89,7 @@ a:link {
 
 .divClass {
     text-align: justify;
-    padding:0px;
-   
+    padding: 0px;
 }
 
     .divClass img {
@@ -104,8 +103,27 @@ a:link {
         display: inline-block;
         width: 100%;
     }
+
+.divClass1 {
+    text-align: justify;
+    padding: 0px;
+}
+
+    .divClass1 img {
+        display: inline-block;
+        width: 205px;
+        height: 130px;
+    }
+
+    .divClass1:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
 .divClass2 {
     text-align: justify;
+    margin: 1px;
 }
 
     .divClass2 img {
@@ -119,6 +137,7 @@ a:link {
         display: inline-block;
         width: 100%;
     }
+
 a:visited {
     color: aliceblue;
     background-color: transparent;
@@ -139,30 +158,59 @@ a:active {
 
 div {
     text-wrap: normal;
-    background-color: gray;
+    background-color: dimgray;
     color: white;
     padding: 20px;
-    /*border-spacing:10px 50px;*/
     margin: 20px 30px 40px 50px;
 }
 
 #div3cols {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3;
     column-count: 3;
-    /*-webkit-column-rule-width: 1px; 
-    -moz-column-rule-width: 1px;*/ 
-    /*column-rule-width: 1px;*/
-    text-justify:auto;
-    margin-top:0px;
-    column-gap:55px;
+    margin-left: 2px;
+    margin-right: 0px;
+    text-justify: auto;
+    margin-top: 0px;
+    column-gap: 50px;
 
-    
-    /*align-items: center;*/
 }
 
-/*#crash {
-    display: block;
+h1 {
+    color: maroon;
+}
+
+#button1 {
+    background-color: maroon;
+    border: groove;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-align: center;
     margin: auto;
-    width: 50%;
-}*/
+    float: right;
+    display: block;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    #button1:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+.columns2 {
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.img-with-text {
+    display: inline-block;
+    text-align: justify;
+    width: 100px;
+    column-gap: 0px;
+}
+
+    .img-with-text img {
+        display: inline-block;
+        margin: 0 auto;
+    }
